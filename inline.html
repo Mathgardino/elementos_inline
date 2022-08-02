@@ -2,25 +2,84 @@
 <html>
 
 <head>
-    <title>Inline, block e inline-block</title>
+    <link rel="icon" href="/icon/favicon.ico" />
+    <title>Posicionamentos</title>
     <meta charset="utf-8">
 
     <style type="text/css">
+        /*
         .borda {
             border: 1px solid red;
             display: inline-block;
+        }
+        */
+
+        #container {
+            background-color: white;
+            width: 800px;
+            margin: 10px auto;
+
+        }
+
+        body {
+            background-color: #007fc7;
+        }
+
+        h1{
+            position: static;
+        }
+
+        p{
+            width: 300px;
+            
+        }
+
+        .relative{
+            border: 1px solid red;
         }
     </style>
 </head>
 
 <body>
+    <!--
     <span class="borda">Bloco 1 teste</span>
     <span class="borda">bloco 2</span>
-    <!--
+   
     <div class="borda">Bloco 1</div>
     <div class="borda">Bloco 2</div>
     -->
+
+    <div id="container">
+        <!--Div de container-->
+        <h1>Posicionamentos</h1>
+        <p>
+            producao.status,
+            producao.DATANECESSIDADE,
+            producao.<strong>CUSTOPREVISTOTAREFAS</strong>,
+            producao.CUSTOPREVISTOCOMPONENTES,
+            producao.DATAFINAL,
+            producao.DATAINICIAL,
+            producao.DATATERMINO,
+        </p>
+        <p class="relative">
+            producao.status,
+            producao.<strong>DATANECESSIDADE</strong>,
+            producao.CUSTOPREVISTOTAREFAS,
+            producao.CUSTOPREVISTOCOMPONENTES,
+            producao.DATAFINAL,
+            producao.DATAINICIAL,
+            producao.DATATERMINO,
+        </p>
+        <p>
+            producao.status,
+            producao.DATANECESSIDADE,
+            producao.CUSTOPREVISTOTAREFAS,
+            producao.CUSTOPREVISTOCOMPONENTES,
+            producao.DATAFINAL,
+            producao.DATAINICIAL,
+            producao.DATATERMINO,
+        </p>
+    </div>
 </body>
 
 </html>
-
